@@ -19,6 +19,18 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ------------------------------------------------------------header   */
 
 .header {
@@ -26,7 +38,7 @@ body {
 }
 
 .header-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -80,7 +92,7 @@ body {
 }
 
 .footer .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -162,7 +174,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  opacity: 0;
 }
 
 .require-name {
@@ -233,9 +244,6 @@ body {
 }
 
 /* -------------------------------------------------------portfolio main */
-.portfolio-section-name {
-  opacity: 0;
-}
 
 .filter-button {
   background: #f5f4fa;
@@ -250,6 +258,7 @@ body {
   color: var(--title-color);
   cursor: pointer;
   border: none;
+  padding: 6px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
